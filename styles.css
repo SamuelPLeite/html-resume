@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Manrope', sans-serif;
+  width: 210mm;
+  /* Width of A4 page in millimeters */
+  height: 297mm;
+  /* Height of A4 page in millimeters */
+  color: rgb(19, 26, 51);
+  background: rgb(28, 39, 76);
+  padding: 1rem 2rem;
+  margin: 0;
+}
+
+.content {
+  background: rgb(202, 220, 241);
+  padding: 1rem 2rem;
+}
+
+.svg-symbol {
+  width: 30px;
+  height: 30px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border: 5px solid rgb(28, 39, 76);
+  border-radius: 1rem;
+  background-image: url(images/wave.svg);
+  background-repeat: no-repeat;
+  background-size: 200% auto;
+  transition: all 500ms;
+  color: rgb(4, 13, 44);
+}
+
+.header:hover {
+  background-position: right center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.header h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.header-image {
+  background: rgb(87, 255, 216);
+  background: linear-gradient(45deg, rgb(28, 94, 37) 0%, rgb(132, 152, 218) 100%);
+  border-radius: 64% 36% 64% 36% / 45% 54% 46% 55%;
+  margin-right: 2rem;
+  padding: 1.5rem;
+}
+
+.header-image img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+}
+
+.header-content {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.header-content:hover {
+  background: rgba(213, 234, 243, 0.7)
+}
+
+.content-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-body__main {
+  width: 70%;
+}
+
+.content-body__side {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  width: 26%;
+  border-left: 3px solid rgb(28, 39, 76);
+  border-top: 1px solid rgb(28, 39, 76);
+}
+
+section {
+  outline: 2px solid rgb(28, 39, 76);
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background: linear-gradient(45deg, rgba(49, 194, 219, 0.15) 0%, rgba(97, 82, 233, 0.15) 100%);
+  transition: all 200ms ease;
+}
+
+section:hover {
+  outline: 4px solid rgb(28, 39, 76);
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background: linear-gradient(45deg, rgba(49, 194, 219, 0.15) 0%, rgba(97, 82, 233, 0.15) 100%);
+}
+
+section:hover .svg-symbol {
+  animation: shake 2s linear infinite;
+}
+
+section h2 {
+  margin: 0;
+}
+
+.section-content {
+  margin-left: 30px;
+  border-left: 3px solid rgb(28, 39, 76);
+  border-top: 1px solid rgb(28, 39, 76);
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section-content ul {
+  margin-bottom: 0;
+}
+
+.section-subhead {
+  display: flex;
+  align-items: center;
+}
+
+.section-subhead img {
+  width: 4rem;
+  height: 3.9rem;
+  margin-left: 4rem;
+}
+
+.section-subhead p {
+  margin: 0;
+}
+
+.content-body__side-section ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.8rem;
+}
+
+.content-body__side-section li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  word-break: break-all;
+}
+
+.content-body__side-section li a,
+.section-subhead a {
+  text-decoration: none;
+  color: rgb(45, 64, 126);
+}
+
+.content-body__side-section li .icon {
+  margin-right: 0.5rem;
+}
+
+.school p {
+  margin: 0;
+}
+
+footer p {
+  font-size: smaller;
+  text-align: center;
+}
+
+.header:hover .header-image {
+  animation: rotate 4s linear infinite;
+}
+
+.header:hover .header-image img {
+  animation: reverseRotate 4s linear infinite;
+}
+
+.css-icon {
+  height: 24px;
+  width: 16px;
+  padding-left: 0.3rem;
+  margin-right: 1rem;
+}
+
+.ball {
+  margin-left: 0.5rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  outline: 1px solid rgb(28, 39, 76);
+}
+
+.ball-filled {
+  margin-left: 0.5rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(28, 39, 76);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reverseRotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  25% {
+    transform: scale(1.1) rotate(30deg);
+  }
+
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  75% {
+    transform: scale(1.1) rotate(-30deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
