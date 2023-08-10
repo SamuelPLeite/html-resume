@@ -13,7 +13,7 @@ body {
 }
 
 .content {
-  background: rgb(202, 220, 241);
+  background: rgb(219, 234, 250);
   padding: 1rem 2rem;
 }
 
@@ -31,7 +31,7 @@ body {
   display: flex;
   align-items: center;
   padding: 1.5rem;
-  border: 5px solid rgb(28, 39, 76);
+  border: 5px solid rgb(37, 73, 151);
   border-radius: 1rem;
   background-image: url(images/wave.svg);
   background-repeat: no-repeat;
@@ -42,6 +42,10 @@ body {
 
 .header:hover {
   background-position: right center;
+}
+
+.test {
+  color: rgb(37, 73, 151);
 }
 
 .header h1 {
@@ -56,17 +60,20 @@ body {
 }
 
 .header-image {
+  display: flex;
   background: rgb(87, 255, 216);
-  background: linear-gradient(45deg, rgb(28, 94, 37) 0%, rgb(132, 152, 218) 100%);
-  border-radius: 64% 36% 64% 36% / 45% 54% 46% 55%;
+  background: linear-gradient(45deg, #63e1fd 10%, rgb(13, 24, 82) 90%);
+  border-radius: 50%;
   margin-right: 2rem;
-  padding: 1.5rem;
+  padding: 1rem;
+  aspect-ratio: 1/1;
 }
 
 .header-image img {
   width: 9rem;
   height: 9rem;
   border-radius: 50%;
+  outline: 4px solid rgba(255, 255, 255, 0.404);
 }
 
 .header-content {
@@ -77,6 +84,11 @@ body {
   padding: 0.5rem;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.4);
+  box-shadow:
+    15.6px 14px 31.5px -33px rgba(0, 0, 0, 0.039),
+    35.3px 31.6px 47.4px -33px rgba(0, 0, 0, 0.064),
+    49.8px 44.7px 61px -33px rgba(0, 0, 0, 0.087),
+    58px 52px 103px -33px rgba(0, 0, 0, 0.14);
 }
 
 .header-content:hover {
